@@ -15,6 +15,8 @@
 		D41C20BA21DFCAFB006BF321 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20B921DFCAFB006BF321 /* BoxView.swift */; };
 		D41C20BC21DFCEF0006BF321 /* PlaceholderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */; };
 		D41C20BE21DFDD45006BF321 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20BD21DFDD45006BF321 /* LoginViewController.swift */; };
+		D4C0F26921E0269B000E1CF4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0F26821E0269B000E1CF4 /* MenuViewController.swift */; };
+		D4C0F26C21E0285D000E1CF4 /* SlideOverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0F26B21E0285D000E1CF4 /* SlideOverAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		D41C20B921DFCAFB006BF321 /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
 		D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderCell.swift; sourceTree = "<group>"; };
 		D41C20BD21DFDD45006BF321 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D4C0F26821E0269B000E1CF4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D4C0F26B21E0285D000E1CF4 /* SlideOverAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +67,14 @@
 				D41C20A721DFC984006BF321 /* AppDelegate.swift */,
 				D41C20BD21DFDD45006BF321 /* LoginViewController.swift */,
 				D41C20A921DFC984006BF321 /* SocialViewController.swift */,
+				D4C0F26821E0269B000E1CF4 /* MenuViewController.swift */,
 				D41C20AB21DFC984006BF321 /* Main.storyboard */,
 				D41C20AE21DFC987006BF321 /* Assets.xcassets */,
 				D41C20B021DFC987006BF321 /* LaunchScreen.storyboard */,
 				D41C20B321DFC987006BF321 /* Info.plist */,
 				D41C20B921DFCAFB006BF321 /* BoxView.swift */,
 				D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */,
+				D4C0F26B21E0285D000E1CF4 /* SlideOverAnimator.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41C20AA21DFC984006BF321 /* SocialViewController.swift in Sources */,
+				D4C0F26921E0269B000E1CF4 /* MenuViewController.swift in Sources */,
+				D4C0F26C21E0285D000E1CF4 /* SlideOverAnimator.swift in Sources */,
 				D41C20A821DFC984006BF321 /* AppDelegate.swift in Sources */,
 				D41C20BA21DFCAFB006BF321 /* BoxView.swift in Sources */,
 				D41C20BE21DFDD45006BF321 /* LoginViewController.swift in Sources */,

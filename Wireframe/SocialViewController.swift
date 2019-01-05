@@ -8,11 +8,38 @@
 
 import UIKit
 
-class SocialViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SocialViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIViewControllerTransitioningDelegate {
     
-    @IBAction func back(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+    let transition = SlideOverAnimator()
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func menu(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let menuController = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else {
+            return
+        }
+        
+        menuController.transitioningDelegate = self
+        present(menuController, animated: true, completion: nil)
+        
     }
+    
+    // MARK: - UIViewControllerTransitioningDelegate Functions
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.presenting = true
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.presenting = false
+        return transition
+    }
+    
+    // MARK: - TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -25,9 +52,6 @@ class SocialViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         return cell
     }
-    
-
-    @IBOutlet weak var tableView: UITableView!
     
 }
 
