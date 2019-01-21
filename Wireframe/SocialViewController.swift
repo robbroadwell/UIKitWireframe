@@ -8,11 +8,12 @@
 
 import UIKit
 
-class SocialViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIViewControllerTransitioningDelegate {
+class SocialViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, UIViewControllerTransitioningDelegate {
     
     let transition = SlideOverAnimator()
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingImageView: UIImageView!
     
     @IBAction func menu(_ sender: UIButton) {
         
@@ -53,5 +54,28 @@ class SocialViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    // MARK: - Pull to Refresh
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        if scrollView.contentOffset.y <= 0 {
+            let loadingAppearanceOffset: CGFloat = 0.2
+            let numberOfImages = 20
+            
+            let alpha: CGFloat = (abs(scrollView.contentOffset.y) / 100) - loadingAppearanceOffset
+            loadingImageView.alpha = min(alpha, 1.0)
+            
+            let imageNumber = Int(abs(scrollView.contentOffset.y)) % numberOfImages
+            let imageName = "loading" + String(imageNumber)
+            let image = UIImage(named: imageName)
+            loadingImageView.image = image
+        }
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView.contentOffset.y <= 0 {
+            // pull to refresh occured
+        }
+    }
 }
 
