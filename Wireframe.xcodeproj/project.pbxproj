@@ -15,6 +15,7 @@
 		D41C20BA21DFCAFB006BF321 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20B921DFCAFB006BF321 /* BoxView.swift */; };
 		D41C20BC21DFCEF0006BF321 /* PlaceholderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */; };
 		D41C20BE21DFDD45006BF321 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20BD21DFDD45006BF321 /* LoginViewController.swift */; };
+		D4AFDC4421F6906000CE4A96 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AFDC4321F6906000CE4A96 /* UIColor+.swift */; };
 		D4C0F26921E0269B000E1CF4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0F26821E0269B000E1CF4 /* MenuViewController.swift */; };
 		D4C0F26C21E0285D000E1CF4 /* SlideOverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0F26B21E0285D000E1CF4 /* SlideOverAnimator.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		D41C20B921DFCAFB006BF321 /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
 		D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderCell.swift; sourceTree = "<group>"; };
 		D41C20BD21DFDD45006BF321 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D4AFDC4321F6906000CE4A96 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		D4C0F26821E0269B000E1CF4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D4C0F26B21E0285D000E1CF4 /* SlideOverAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,18 +67,67 @@
 			isa = PBXGroup;
 			children = (
 				D41C20A721DFC984006BF321 /* AppDelegate.swift */,
+				D41C20B321DFC987006BF321 /* Info.plist */,
+				D4AFDC4521F6920F00CE4A96 /* Interface */,
+				D4AFDC4621F6921F00CE4A96 /* Extensions */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D4AFDC4521F6920F00CE4A96 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D4AFDC4A21F692B700CE4A96 /* Components */,
+				D4AFDC4921F692AC00CE4A96 /* Controllers */,
+				D4AFDC4821F6929C00CE4A96 /* Storyboards */,
+				D4AFDC4721F6929400CE4A96 /* Transitions */,
+				D41C20AE21DFC987006BF321 /* Assets.xcassets */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		D4AFDC4621F6921F00CE4A96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D4AFDC4321F6906000CE4A96 /* UIColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D4AFDC4721F6929400CE4A96 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				D4C0F26B21E0285D000E1CF4 /* SlideOverAnimator.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		D4AFDC4821F6929C00CE4A96 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D41C20AB21DFC984006BF321 /* Main.storyboard */,
+				D41C20B021DFC987006BF321 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D4AFDC4921F692AC00CE4A96 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				D41C20BD21DFDD45006BF321 /* LoginViewController.swift */,
 				D41C20A921DFC984006BF321 /* SocialViewController.swift */,
 				D4C0F26821E0269B000E1CF4 /* MenuViewController.swift */,
-				D41C20AB21DFC984006BF321 /* Main.storyboard */,
-				D41C20AE21DFC987006BF321 /* Assets.xcassets */,
-				D41C20B021DFC987006BF321 /* LaunchScreen.storyboard */,
-				D41C20B321DFC987006BF321 /* Info.plist */,
-				D41C20B921DFCAFB006BF321 /* BoxView.swift */,
-				D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */,
-				D4C0F26B21E0285D000E1CF4 /* SlideOverAnimator.swift */,
 			);
-			path = Wireframe;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D4AFDC4A21F692B700CE4A96 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */,
+				D41C20B921DFCAFB006BF321 /* BoxView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41C20AA21DFC984006BF321 /* SocialViewController.swift in Sources */,
+				D4AFDC4421F6906000CE4A96 /* UIColor+.swift in Sources */,
 				D4C0F26921E0269B000E1CF4 /* MenuViewController.swift in Sources */,
 				D4C0F26C21E0285D000E1CF4 /* SlideOverAnimator.swift in Sources */,
 				D41C20A821DFC984006BF321 /* AppDelegate.swift in Sources */,
