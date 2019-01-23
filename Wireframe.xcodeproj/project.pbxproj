@@ -15,7 +15,16 @@
 		D41C20BA21DFCAFB006BF321 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20B921DFCAFB006BF321 /* BoxView.swift */; };
 		D41C20BC21DFCEF0006BF321 /* PlaceholderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */; };
 		D41C20BE21DFDD45006BF321 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20BD21DFDD45006BF321 /* LoginViewController.swift */; };
+		D451971621F9085D00318655 /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971521F9085D00318655 /* GoogleAPI.swift */; };
+		D451971821F9087E00318655 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971721F9087E00318655 /* Secret.swift */; };
+		D451971A21F908E100318655 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971921F908E100318655 /* NetworkService.swift */; };
+		D451971D21F9090C00318655 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971C21F9090C00318655 /* Place.swift */; };
+		D451972021F911C300318655 /* UserActivityTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971F21F911C300318655 /* UserActivityTimeout.swift */; };
+		D451972221F913FE00318655 /* Notification+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451972121F913FE00318655 /* Notification+.swift */; };
+		D451972421F9149600318655 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451972321F9149600318655 /* RootNavigationController.swift */; };
+		D451972621F9228200318655 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451972521F9228200318655 /* ResultCell.swift */; };
 		D4AFDC4421F6906000CE4A96 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AFDC4321F6906000CE4A96 /* UIColor+.swift */; };
+		D4AFDC4D21F904B200CE4A96 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AFDC4C21F904B200CE4A96 /* SearchViewController.swift */; };
 		D4C0F26921E0269B000E1CF4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0F26821E0269B000E1CF4 /* MenuViewController.swift */; };
 		D4C0F26C21E0285D000E1CF4 /* SlideOverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0F26B21E0285D000E1CF4 /* SlideOverAnimator.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +40,16 @@
 		D41C20B921DFCAFB006BF321 /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
 		D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderCell.swift; sourceTree = "<group>"; };
 		D41C20BD21DFDD45006BF321 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D451971521F9085D00318655 /* GoogleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAPI.swift; sourceTree = "<group>"; };
+		D451971721F9087E00318655 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		D451971921F908E100318655 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D451971C21F9090C00318655 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		D451971F21F911C300318655 /* UserActivityTimeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActivityTimeout.swift; sourceTree = "<group>"; };
+		D451972121F913FE00318655 /* Notification+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+.swift"; sourceTree = "<group>"; };
+		D451972321F9149600318655 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		D451972521F9228200318655 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		D4AFDC4321F6906000CE4A96 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		D4AFDC4C21F904B200CE4A96 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D4C0F26821E0269B000E1CF4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D4C0F26B21E0285D000E1CF4 /* SlideOverAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,9 +87,38 @@
 				D41C20A721DFC984006BF321 /* AppDelegate.swift */,
 				D41C20B321DFC987006BF321 /* Info.plist */,
 				D4AFDC4521F6920F00CE4A96 /* Interface */,
+				D451971B21F9090100318655 /* Model */,
+				D451971421F9085300318655 /* API */,
+				D451971E21F911AC00318655 /* Utility */,
 				D4AFDC4621F6921F00CE4A96 /* Extensions */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D451971421F9085300318655 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D451971521F9085D00318655 /* GoogleAPI.swift */,
+				D451971921F908E100318655 /* NetworkService.swift */,
+				D451971721F9087E00318655 /* Secret.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D451971B21F9090100318655 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D451971C21F9090C00318655 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D451971E21F911AC00318655 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D451971F21F911C300318655 /* UserActivityTimeout.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		D4AFDC4521F6920F00CE4A96 /* Interface */ = {
@@ -90,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				D4AFDC4321F6906000CE4A96 /* UIColor+.swift */,
+				D451972121F913FE00318655 /* Notification+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -117,6 +165,8 @@
 				D41C20BD21DFDD45006BF321 /* LoginViewController.swift */,
 				D41C20A921DFC984006BF321 /* SocialViewController.swift */,
 				D4C0F26821E0269B000E1CF4 /* MenuViewController.swift */,
+				D4AFDC4C21F904B200CE4A96 /* SearchViewController.swift */,
+				D451972321F9149600318655 /* RootNavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +176,7 @@
 			children = (
 				D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */,
 				D41C20B921DFCAFB006BF321 /* BoxView.swift */,
+				D451972521F9228200318655 /* ResultCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,14 +252,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D451971A21F908E100318655 /* NetworkService.swift in Sources */,
+				D451972421F9149600318655 /* RootNavigationController.swift in Sources */,
 				D41C20AA21DFC984006BF321 /* SocialViewController.swift in Sources */,
+				D451971D21F9090C00318655 /* Place.swift in Sources */,
 				D4AFDC4421F6906000CE4A96 /* UIColor+.swift in Sources */,
+				D451972621F9228200318655 /* ResultCell.swift in Sources */,
 				D4C0F26921E0269B000E1CF4 /* MenuViewController.swift in Sources */,
+				D4AFDC4D21F904B200CE4A96 /* SearchViewController.swift in Sources */,
+				D451971821F9087E00318655 /* Secret.swift in Sources */,
 				D4C0F26C21E0285D000E1CF4 /* SlideOverAnimator.swift in Sources */,
+				D451972221F913FE00318655 /* Notification+.swift in Sources */,
 				D41C20A821DFC984006BF321 /* AppDelegate.swift in Sources */,
 				D41C20BA21DFCAFB006BF321 /* BoxView.swift in Sources */,
 				D41C20BE21DFDD45006BF321 /* LoginViewController.swift in Sources */,
+				D451972021F911C300318655 /* UserActivityTimeout.swift in Sources */,
 				D41C20BC21DFCEF0006BF321 /* PlaceholderCell.swift in Sources */,
+				D451971621F9085D00318655 /* GoogleAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

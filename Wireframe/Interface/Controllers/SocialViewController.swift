@@ -28,6 +28,10 @@ class SocialViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        UserActivityTimeout.shared.registerActivity()
+    }
+    
     // MARK: - UIViewControllerTransitioningDelegate Functions
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

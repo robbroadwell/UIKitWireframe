@@ -8,6 +8,13 @@
 
 import UIKit
 
+/*
+ 
+ - Autocomplete Network Architecture
+ - Inactivity Timeouts
+ 
+ */
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

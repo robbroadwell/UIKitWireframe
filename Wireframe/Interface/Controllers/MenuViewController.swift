@@ -20,6 +20,7 @@ class MenuViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        UserActivityTimeout.shared.registerActivity()
         UIView.animate(withDuration: 0.25) {
             self.fadeOutView.alpha = 0.75
         }
