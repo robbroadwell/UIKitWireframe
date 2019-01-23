@@ -10,8 +10,14 @@ import UIKit
 
 /*
  
- - Autocomplete Network Architecture
- - Inactivity Timeouts
+ x Pull to Refresh
+ x Hamburger Menu
+ x Handling the Keyboard
+ * Autocomplete Network Architecture
+ * Inactivity Timeouts
+ - Custom Calendar CollectionView
+ - OperationQueue
+ - DispatchQueue
  
  */
 
