@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FCCB70121F948720055A68A /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCCB70021F948720055A68A /* MockAPI.swift */; };
 		D41C20A821DFC984006BF321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20A721DFC984006BF321 /* AppDelegate.swift */; };
 		D41C20AA21DFC984006BF321 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20A921DFC984006BF321 /* SocialViewController.swift */; };
 		D41C20AD21DFC984006BF321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41C20AB21DFC984006BF321 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FCCB70021F948720055A68A /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		D41C20A421DFC984006BF321 /* Wireframe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wireframe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41C20A721DFC984006BF321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D41C20A921DFC984006BF321 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D451971521F9085D00318655 /* GoogleAPI.swift */,
+				4FCCB70021F948720055A68A /* MockAPI.swift */,
 				D451971921F908E100318655 /* NetworkService.swift */,
 			);
 			path = API;
@@ -264,6 +267,7 @@
 				D41C20BE21DFDD45006BF321 /* LoginViewController.swift in Sources */,
 				D451972021F911C300318655 /* UserActivityTimeout.swift in Sources */,
 				D41C20BC21DFCEF0006BF321 /* PlaceholderCell.swift in Sources */,
+				4FCCB70121F948720055A68A /* MockAPI.swift in Sources */,
 				D451971621F9085D00318655 /* GoogleAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

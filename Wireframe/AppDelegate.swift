@@ -13,11 +13,11 @@ import UIKit
  x Pull to Refresh
  x Hamburger Menu
  x Handling the Keyboard
- * Autocomplete Network Architecture
  x Inactivity Timeouts
+ x DispatchGroup
+ * Autocomplete Network Architecture
  - Custom Calendar CollectionView
  - OperationQueue
- - DispatchQueue
  
  */
 

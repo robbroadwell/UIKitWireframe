@@ -25,4 +25,34 @@ class MenuViewController: UIViewController {
             self.fadeOutView.alpha = 0.75
         }
     }
+    
+    override func viewDidLoad() {
+        let group = DispatchGroup()
+        
+        group.enter()
+        MockAPI.networkRequestWithDelay(seconds: 1) { (json) in
+            group.leave()
+        }
+        
+        group.enter()
+        MockAPI.networkRequestWithDelay(seconds: 2) { (json) in
+            group.leave()
+        }
+        
+        group.enter()
+        MockAPI.networkRequestWithDelay(seconds: 5) { (json) in
+            group.leave()
+        }
+        
+        group.notify(queue: .global(qos: .default)) {
+            self.updateDisplay()
+        }
+    }
+    
+    private func updateDisplay() {
+        // bounce back to the main thread
+        DispatchQueue.main.async {
+            // set labels, images, etc.
+        }
+    }
 }
