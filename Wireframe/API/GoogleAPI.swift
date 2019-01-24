@@ -15,7 +15,7 @@ struct GoogleAPI {
         let url = "https://maps.googleapis.com/maps/api/place/autocomplete/json"
         
         let parameters = ["input": query,
-                          "key": Secret.APIKey]
+                          "key": ""]
         
         let resource = URLResource(url: url, method: .GET, headers: nil, parameters: parameters)
         

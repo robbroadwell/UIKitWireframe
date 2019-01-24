@@ -16,7 +16,6 @@
 		D41C20BC21DFCEF0006BF321 /* PlaceholderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */; };
 		D41C20BE21DFDD45006BF321 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C20BD21DFDD45006BF321 /* LoginViewController.swift */; };
 		D451971621F9085D00318655 /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971521F9085D00318655 /* GoogleAPI.swift */; };
-		D451971821F9087E00318655 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971721F9087E00318655 /* Secret.swift */; };
 		D451971A21F908E100318655 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971921F908E100318655 /* NetworkService.swift */; };
 		D451971D21F9090C00318655 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971C21F9090C00318655 /* Place.swift */; };
 		D451972021F911C300318655 /* UserActivityTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451971F21F911C300318655 /* UserActivityTimeout.swift */; };
@@ -41,7 +40,6 @@
 		D41C20BB21DFCEF0006BF321 /* PlaceholderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderCell.swift; sourceTree = "<group>"; };
 		D41C20BD21DFDD45006BF321 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D451971521F9085D00318655 /* GoogleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAPI.swift; sourceTree = "<group>"; };
-		D451971721F9087E00318655 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		D451971921F908E100318655 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		D451971C21F9090C00318655 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		D451971F21F911C300318655 /* UserActivityTimeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActivityTimeout.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			children = (
 				D451971521F9085D00318655 /* GoogleAPI.swift */,
 				D451971921F908E100318655 /* NetworkService.swift */,
-				D451971721F9087E00318655 /* Secret.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -260,7 +257,6 @@
 				D451972621F9228200318655 /* ResultCell.swift in Sources */,
 				D4C0F26921E0269B000E1CF4 /* MenuViewController.swift in Sources */,
 				D4AFDC4D21F904B200CE4A96 /* SearchViewController.swift in Sources */,
-				D451971821F9087E00318655 /* Secret.swift in Sources */,
 				D4C0F26C21E0285D000E1CF4 /* SlideOverAnimator.swift in Sources */,
 				D451972221F913FE00318655 /* Notification+.swift in Sources */,
 				D41C20A821DFC984006BF321 /* AppDelegate.swift in Sources */,

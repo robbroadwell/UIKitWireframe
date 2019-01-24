@@ -14,7 +14,7 @@ import UIKit
  x Hamburger Menu
  x Handling the Keyboard
  * Autocomplete Network Architecture
- * Inactivity Timeouts
+ x Inactivity Timeouts
  - Custom Calendar CollectionView
  - OperationQueue
  - DispatchQueue
